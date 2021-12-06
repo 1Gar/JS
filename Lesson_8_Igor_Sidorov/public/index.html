@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8 | Sidorov Igor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce35782f75.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+    <div id="app">
+        <header class="header">
+            <div class="wrap header__wrap">
+                <div class="header__left">
+                    <a href="#" class="header__logo"><img class="header__logo-img" src="img/logo.png" alt="logo"></a>
+                    <filter-el></filter-el>
+                </div>
+
+
+                <div class="header-right">
+                    <button class="header__menu">
+                        <svg class="header__menu-img" xmlns="http://www.w3.org/2000/svg" width="32" height="23"
+                            viewBox="0 0 32 23">
+                            <g>
+                                <g>
+                                    <path d="M0 23v-2.69h32V23zm0-10.24v-2.69h32v2.69zM0 2.69V0h32v2.69z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <a href="#" class="header__account">
+                        <svg class="header__account-img" xmlns="http://www.w3.org/2000/svg" width="29" height="29"
+                            viewBox="0 0 29 29">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M6.344 9.974A11.159 11.159 0 0 1 8.666 3 7.451 7.451 0 0 1 14.5 0c4.5 0 8.156 4.472 8.156 9.968 0 5.496-3.656 9.969-8.156 9.969s-8.156-4.472-8.156-9.963zm1.811-.005c.001 4.496 2.847 8.156 6.345 8.156 3.498 0 6.344-3.659 6.344-8.156 0-4.497-2.844-8.156-6.344-8.156-3.5 0-6.346 3.66-6.345 8.156zm18.453 10.548A8.166 8.166 0 0 1 29 26.28 2.722 2.722 0 0 1 26.282 29H2.719A2.722 2.722 0 0 1 0 26.281a8.165 8.165 0 0 1 8.158-8.155.906.906 0 0 1 0 1.812 6.352 6.352 0 0 0-6.344 6.344.908.908 0 0 0 .906.906h23.562a.908.908 0 0 0 .906-.906 6.351 6.351 0 0 0-6.344-6.344.907.907 0 0 1 0-1.813 8.166 8.166 0 0 1 5.764 2.392z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <div class="cart">
+
+
+
+                        <cart ref="cart"></cart>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <div class="hiden"></div>
+
+        <section class="intro">
+            <div class="wrap">
+                <div class="intro__wrap">
+                    <h1 class="intro__text">
+                        <span class="intro__text-bold">the brand</span><br>
+                        <span class="intro__text-regular">of luxerious</span>
+                        <span class="intro__text-pink">fashion</span>
+                    </h1>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="category">
+            <div class="wrap category__wrap">
+                <div class="category__card category__woman-card">
+                    <div class="category__background">
+                        <h6><a href="#" class="category__text">30% off<br><span class="category-span">for
+                                    women</span></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class="category__card category__men-card">
+                    <div class="category__background">
+                        <h6><a href="#" class="category__text">hot deal<br><span class="category-span">for
+                                    men</span></a>
+                        </h6>
+                    </div>
+                </div>
+                <div class="category__card category__kid-card">
+                    <div class="category__background">
+                        <h6><a href="#" class="category__text">new arrivals<br><span class="category-span">for
+                                    kids</span></a></h6>
+                    </div>
+                </div>
+                <div class="category__card category__accesories-card">
+                    <div class="category__background">
+                        <h6><a href="#" class="category__text">luxirous & trendy<br><span
+                                    class="category-span">accesories</span></a></h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <main>
+            <h2 class="products__title tracking-in-contract">Featured Items</h2>
+            <p class="products__description">Shop for items based on what we featured in this week</p>
+            <div class="wrap">
+                <products ref="products"></products>
+            </div>
+
+        </main>
+
+
+
+
+
+
+
+
+        <div class="products__card-btn">
+            <a href="#" class="products__card-btn-link">Browse All Product</a>
+        </div>
+
+
+        <section class="subscribe">
+            <div class="subscribe-background">
+                <div class="wrap subscribe__wrap-subscribe">
+                    <div class="subscribe__left-column">
+                        <img class="subscribe__img" src="img/subscribe-img.png" alt="subscribe-img">
+                        <p class="subscribe__left-column-p">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            <span class="subscribe__left-column-span">a pulvinar purus condimentum“</span></p>
+                    </div>
+                    <div class="subscribe__right-column">
+                        <div class="subscribe__right__h3">
+                            <h5 class="subscribe__right-column-h5"><span
+                                    class="subscribe__right-column-span">subscribe</span><br>for our new letter and
+                                promotion</h5>
+                        </div>
+
+                        <form action="#" class="subscribe__form">
+                            <input class="subscribe__email" type="email" placeholder="Enter Your Email" minlength="3"
+                                maxlength="25" required>
+                            <input class="subscribe__btn" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="wrap footer__wrap-footer">
+                <section>
+                    <h6 class="footer__rights">© 2021 Brand All Rights Reserved.</h6>
+                </section>
+                <section class="footer__social-icons">
+                    <a href="#" class="footer__icons-bg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__icons-bg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__icons-bg"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="footer__icons-bg"><i class="fab fa-twitter"></i></a>
+                </section>
+            </div>
+        </footer>
+
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/searchComponent.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
